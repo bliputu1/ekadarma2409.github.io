@@ -3,30 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Eka Darma Wijaya</title>
     <link rel="stylesheet" href="style.css">
-    <title>Pertemuan ke 7</title>
 </head>
 <body>
 
-    <div id="absolute-container">
-        <p>ini adalah posisi absolute</p>
-    </div>
-
-    <div id="sticky-container">
-        <p>ini adalah posisi sticky</p>
-    </div>
-
-    <div id="static-container">
-        <p>ini adalah posisi static default</p>
-    </div>
-
-    <div id="fixed-container">
-        <p>ini adalah posisi relative</p>
-    </div>
-
-    <div id="relative-container">
-        <p>ini adalah posisi relative</p>
-    </div>
+<div class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label>Query Type *</label>
+            <div class="radio-group">
+                <label><input type="radio" name="query-type" value="general" required> General Enquiry</label>
+                <label><input type="radio" name="query-type" value="support"> Support Request</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I consent to being contacted by the team *</label>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
 
 </body>
 </html>
